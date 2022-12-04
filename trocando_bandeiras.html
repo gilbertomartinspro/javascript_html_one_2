@@ -51,11 +51,10 @@ var mostraBrasil = true;
 function trocaBandeira() {
     if(mostraBrasil) {
         desenhaBandeiraBrasil();
-        mostraBrasil = false;
     } else {
         desenhaBandeiraAlemanha();
-        mostraBrasil = true;
     }
+    mostraBrasil = !mostraBrasil;
 }
 
 desenhaBandeiraBrasil();

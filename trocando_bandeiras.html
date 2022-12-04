@@ -46,14 +46,15 @@ function desenhaBandeiraAlemanha() {
     pincel.fillRect(0, 266, 600, 133);
 }
 
-var bandeira = 1;
+var mostraBrasil = true;
+
 function trocaBandeira() {
-    if(bandeira == 1) {
+    if(mostraBrasil) {
         desenhaBandeiraBrasil();
-        bandeira = 2;
+        mostraBrasil = false;
     } else {
         desenhaBandeiraAlemanha();
-        bandeira = 1;
+        mostraBrasil = true;
     }
 }
 
